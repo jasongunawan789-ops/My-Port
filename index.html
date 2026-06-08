@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JASON GUNAWAN | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#3a3939",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary-fixed": "#e4e2e1",
+                        "surface-dim": "#131313",
+                        "on-error": "#690005",
+                        "on-secondary": "#313030",
+                        "secondary-container": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-variant": "#353534",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-surface": "#e5e2e1",
+                        "on-primary": "#412d00",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-container": "#3b3b3b",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#e9c176",
+                        "surface-tint": "#e9c176",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-container": "#4e3700",
+                        "secondary": "#c8c6c5",
+                        "outline": "#9a8f80",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "primary": "#e9c176",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "tertiary": "#c8c6c6",
+                        "inverse-primary": "#775a19",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-background": "#e5e2e1",
+                        "tertiary-container": "#a7a5a5",
+                        "primary-fixed": "#ffdea5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "background": "#131313",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#261900",
+                        "surface-container": "#201f1f",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline-variant": "#4e4639",
+                        "surface": "#131313",
+                        "primary-container": "#c5a059",
+                        "on-surface-variant": "#d1c5b4",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary": "#303030",
+                        "on-secondary-fixed-variant": "#474746"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "margin-desktop": "80px",
+                        "content-gap": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "1.1", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .text-glow:hover {
+            text-shadow: 0 0 8px rgba(233, 193, 118, 0.4);
+        }
+        .border-subtle {
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+    </style>
+</head>
+<body class="font-body-md selection:bg-primary selection:text-on-primary">
+<nav class="bg-background/70 backdrop-blur-xl dark:bg-background/70 docked full-width top-0 sticky z-50 border-b border-white/10">
+<div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<div class="font-display-lg text-headline-lg font-normal text-on-surface dark:text-on-surface">JASON GUNAWAN</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 scale-95 active:transition-transform" href="#work">Work</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 scale-95 active:transition-transform" href="#experience">Experience</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 scale-95 active:transition-transform" href="#education">Education</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 scale-95 active:transition-transform" href="#skills">Skills</a>
+</div>
+<button class="font-label-caps text-label-caps uppercase tracking-widest border border-primary px-6 py-2.5 text-primary hover:bg-primary hover:text-on-primary transition-all duration-300">
+                LET'S TALK
+            </button>
+</div>
+</nav>
+<main>
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+<img class="w-full h-full object-cover object-top grayscale mix-blend-luminosity" data-alt="A moody, high-contrast black and white portrait of a young professional male looking downwards in contemplation. The lighting is dramatic, casting deep shadows that blend into the pure black background, inspired by high-end editorial photography. The aesthetic is luxurious, modern, and minimalist, utilizing atmospheric depth and tonal layering to create a sense of mystery and technical mastery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBraMQMb4owHcP2GM8ufI4JL88l3ftNhWQfjO0CQEY_EC1I79PaiEjCpOG1u30SW1DUeocqqW60RBgFMrBXcfl-NgumQnK6nZBN0BG6ryFsaWpYUJmGQK1k9IV-er9DTXeJ52YCgKWlsF_8Rnv-QM3Ejl1bzjO977kf_T2RwPQB0RX56IjoHUf5VV6KTbhbMiwabK8sg0yZUOVivu24ww7P_b3fE5XdtzeDlJS1i3E-8NJh2GDqCUM8TJ5KCUzZDZMrd_asIPGlQLw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop">
+<p class="font-label-caps text-label-caps uppercase tracking-[0.3em] mb-6 text-primary animate-pulse">Available for Projects</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-4">
+                    Digital Marketing &amp; <br/>
+<span class="italic font-display-lg text-primary">Operations Specialist</span>
+</h1>
+<p class="max-w-2xl mx-auto text-on-surface-variant font-body-lg text-body-lg mb-12">
+                    Strategizing digital presence and optimizing operational workflows with a focus on impact, precision, and measurable growth.
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<a class="px-10 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-widest hover:brightness-110 transition-all" href="#work">View My Work</a>
+<a class="px-10 py-4 border border-white/20 hover:border-primary text-on-surface font-label-caps text-label-caps uppercase tracking-widest transition-all" href="#contact">Get in Touch</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</section>
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto" id="experience">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<h2 class="font-display-lg text-headline-xl text-on-surface mb-6">Professional <br/>Experience</h2>
+<p class="text-on-surface-variant max-w-sm">A journey through leadership, digital strategy, and operational excellence across diverse industries.</p>
+</div>
+<div class="md:col-span-8 flex flex-col gap-16">
+<div class="group relative pl-8 border-l border-white/10 hover:border-primary transition-colors duration-500">
+<span class="absolute left-0 top-0 -translate-x-1/2 w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform"></span>
+<div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+<h3 class="font-display-lg text-headline-lg text-on-surface">CV. Refresh Media Group</h3>
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-3 py-1 mt-2 md:mt-0">2024</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4">Intern Supervisor &amp; Digital Marketing</p>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>Inspecting intern work results for social media and e-commerce to ensure strict adherence to brand guidelines and quality standards.</p>
+<p>Crafting engaging content for social platforms and managing media posts to drive community engagement and visibility.</p>
+</div>
+</div>
+<div class="group relative pl-8 border-l border-white/10 hover:border-primary transition-colors duration-500">
+<span class="absolute left-0 top-0 -translate-x-1/2 w-3 h-3 bg-white/20 rounded-full group-hover:bg-primary group-hover:scale-150 transition-transform"></span>
+<div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+<h3 class="font-display-lg text-headline-lg text-on-surface">Tunas Honda Caman</h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-white/5 px-3 py-1 mt-2 md:mt-0">2025</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4">Digital Marketing Specialist</p>
+<p class="text-on-surface-variant leading-relaxed">Developed strategic social media campaigns, authored compelling captions for product promotions, and managed motorcycle sales databases to optimize lead tracking.</p>
+</div>
+<div class="group relative pl-8 border-l border-white/10 hover:border-primary transition-colors duration-500">
+<span class="absolute left-0 top-0 -translate-x-1/2 w-3 h-3 bg-white/20 rounded-full group-hover:bg-primary group-hover:scale-150 transition-transform"></span>
+<div class="flex flex-col md:flex-row md:justify-between items-start mb-4">
+<h3 class="font-display-lg text-headline-lg text-on-surface">Sinar Jaya Motor</h3>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-white/5 px-3 py-1 mt-2 md:mt-0">2026</span>
+</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-4">Operations &amp; Inventory Staff</p>
+<p class="text-on-surface-variant leading-relaxed">Managed complex inventory organizations, monitored stock levels for precision and accuracy, and oversaw secure distribution processes.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-gap bg-surface-container-lowest overflow-hidden" id="work">
+<div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em] mb-4">Curated Projects</p>
+<h2 class="font-display-lg text-headline-xl">Strategic Impact</h2>
+</div>
+<a class="hidden md:flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-widest group" href="#">
+                        See All Work 
+                        <span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A minimalist and sleek dashboard design shown on a professional laptop screen. The environment is a dark, upscale home office with moody cinematic lighting. Gold accents from the UI reflect softly on the polished desk surface. The aesthetic is clean, professional, and sophisticated, mirroring a high-end luxury boutique brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmu_lzVYr6KKWhshcMQhD9U4x_gxAq69sYNVE3zTYd0UeT4xUibrBU0reqETYzf6ZLXK57aO-AQIhZktRL0MekmI7micqEHY6H-pzqYeNKzn-qD9NVSy0_6OV1pclZ5-xpaWIJkR5gTbxg9Yro5RInDxXsTeu3zsG7U_MtHti6wkD1RpyNwn6YKTte7g56HWyB7uj7fc-Tr8pm8XuEYyr0bs3Ms5Fo_TaSCHVl7LQujEZIpuGvwhr2ojLhibdKB0LnKqx4FA80na0"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="px-6 py-3 border border-white text-white font-label-caps text-label-caps uppercase">View Project</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary uppercase mb-2">Digital Strategy</p>
+<h3 class="font-display-lg text-headline-lg mb-2">Refresh Media Ecosystem</h3>
+<p class="text-on-surface-variant">Social media management and content architecture.</p>
+</div>
+<div class="group cursor-pointer md:mt-24">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Detailed close-up of a data analytics interface displayed on a high-resolution tablet. The UI features gold and white charts against a deep charcoal background. The lighting is dramatic and focused, highlighting the precision of the information. The background is a blurred, high-end corporate lounge with dark wood and metallic textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJffhwEcUw-mIm638z0cB_o4IdlzFrbhJlXlUJvZMFPpvr6uX83_BrlVufmagA5wIhVdx9CiuPUuIfqj9Z7HjDD6EKdsTiK_npqZyrjYr8o607ikUo7JCjx3_zQYXece622I8bTaNnTxOHDx3pzdCyrOrjcWekcHWjZoCfbM6U9WDdkitqaqtYmIPuUUcLWPJ0SoVzW7jaR3nEo48552FqrHLuo2qEtcUyB000Id0hgmPg-QiX8bfVLopVWzsHp2DC6qgwFJqWjS8"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="px-6 py-3 border border-white text-white font-label-caps text-label-caps uppercase">View Project</span>
+</div>
+</div>
+<p class="font-label-caps text-label-caps text-primary uppercase mb-2">Operations</p>
+<h3 class="font-display-lg text-headline-lg mb-2">Inventory Intelligence</h3>
+<p class="text-on-surface-variant">Systematic auditing and distribution logistics.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto" id="skills">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-start">
+<div>
+<h2 class="font-display-lg text-headline-xl mb-12">Expertise &amp; <br/>Competencies</h2>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Technical</h4>
+<ul class="space-y-4 font-body-lg text-on-surface">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Junior Web Developing</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Basic Coding</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Digital Marketing</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Microsoft Office</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Professional</h4>
+<ul class="space-y-4 font-body-lg text-on-surface">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Problem-Solving</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Time Management</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Punctuality</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Responsible</li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-16 border-t border-white/5">
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Languages</h4>
+<div class="flex gap-12">
+<div>
+<p class="text-headline-lg font-display-lg text-on-surface">Native</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bahasa Indonesia</p>
+</div>
+<div>
+<p class="text-headline-lg font-display-lg text-on-surface">Fluent</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">English</p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-gutter">
+<div class="p-12 border border-white/5 bg-surface-container-low hover:bg-surface-container transition-all duration-500" id="education">
+<p class="font-label-caps text-label-caps text-primary mb-2">ACADEMIC BACKGROUND</p>
+<h3 class="font-display-lg text-headline-lg mb-8">Education</h3>
+<div class="space-y-12">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body-lg text-on-surface font-semibold text-lg">Vocational High School</h4>
+<span class="text-primary font-label-caps text-label-caps">2022 — 2025</span>
+</div>
+<p class="text-on-surface-variant italic">SMK Galajuara</p>
+</div>
+<div class="pt-8 border-t border-white/5">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body-lg text-on-surface font-semibold text-lg">Middle School</h4>
+<span class="text-on-surface-variant font-label-caps text-label-caps">2019 — 2021</span>
+</div>
+<p class="text-on-surface-variant italic">Bezaleel Plus School</p>
+</div>
+</div>
+</div>
+<div class="p-12 border border-white/5 bg-primary text-on-primary" id="contact">
+<h3 class="font-display-lg text-headline-lg mb-8">Connection</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1">mail</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase opacity-60">Email</p>
+<a class="text-headline-lg-mobile font-display-lg hover:opacity-70 transition-opacity" href="mailto:jasongunawan789@gmail.com">jasongunawan789@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1">call</span>
+<div>
+<p class="font-label-caps text-label-caps uppercase opacity-60">Phone</p>
+<p class="text-headline-lg-mobile font-display-lg">0895608542000</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/10 mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-section-gap gap-gutter max-w-[1440px] mx-auto">
+<div class="font-display-lg text-headline-lg text-on-surface">JASON GUNAWAN.</div>
+<div class="flex flex-col items-center md:items-end gap-4">
+<div class="flex gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Dribbble</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Instagram</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 JASON GUNAWAN. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
